@@ -1,10 +1,3 @@
-def computepay(hrs, rate):
-    if hrs > 40 :
-        pay = ((hrs - 40) * (rate * 1.5)) + (40 * rate)
-    else :
-        pay = hrs * rate   
-    return pay
-
 try: 
     hrs = float(input("Enter hours: "))
     rate = float(input("Enter rate: "))
@@ -14,3 +7,10 @@ except:
     
 earned = computepay(hrs, rate)
 print("Pay", earned)
+
+def computepay(hrs, rate):
+    if hrs > 40 :
+        pay = ((hrs - 40) * (rate * 1.5)) + (40 * rate)
+    else :
+        pay = hrs * rate   
+    return pay
