@@ -10,7 +10,7 @@ while True:
         print("Invalid input")
         continue
     # print(fval)
-    num = num + 1
-    tot = tot + fval
+    num += 1
+    tot += fval
 # print("All done")
 print(tot, num, tot/num)
