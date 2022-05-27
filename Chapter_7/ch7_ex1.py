@@ -1,13 +1,10 @@
-from fileinput import filename
-
-
 fileName = input("Enter a file name: ")
 try:
-    open(filename)
+    data = open(fileName)
 except:
-    print("Cannot open file ", filename)
+    print("Cannot open file ", fileName)
     quit()
 
-for line in filename:
+for line in data:
     line = line.rstrip().upper()
     print(line)
